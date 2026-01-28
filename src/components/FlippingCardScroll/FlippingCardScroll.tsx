@@ -77,7 +77,10 @@ const FlippingCardScroll: React.FC<FlippingCardScrollProps> = ({ cards }) => {
               <div className="card-front absolute inset-0 rounded-[inherit] overflow-hidden backface-hidden flex items-center justify-center bg-black">
                 <img
                   src={card.frontImage}
-                  alt=""
+                  alt={`Card ${card.number}`}
+                  width={400}
+                  height={500}
+                  fetchPriority={index < 2 ? "high" : "auto"}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -101,14 +104,17 @@ const FlippingCardScroll: React.FC<FlippingCardScrollProps> = ({ cards }) => {
                       <img
                         src={card.backIcon}
                         alt={`${card.serviceCategory ?? card.backTitle} icon`}
+                        width={56}
+                        height={56}
+                        loading="lazy"
                         className="h-16 w-16 sm:h-12 sm:w-12 lg:h-9 lg:w-9 xl:h-14 xl:w-14 object-contain"
                       />
                     </div>
                   )}
                   <div className="space-y-2">
-                    <h3 className="text-2xl lg:text-base xl:text-xl font-semibold leading-tight tracking-tight text-white">
+                    <h4 className="text-2xl lg:text-base xl:text-xl font-semibold leading-tight tracking-tight text-white">
                       {card.backTitle}
-                    </h3>
+                    </h4>
                     <p className="text-sm lg:text-[10px] xl:text-sm leading-relaxed text-white/80 max-w-[220px]">
                       {card.backSubtitle}
                     </p>
