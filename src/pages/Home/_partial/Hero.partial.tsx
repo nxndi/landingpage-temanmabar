@@ -91,10 +91,15 @@ const Hero: React.FC = () => {
 
               <div className="relative inline-flex items-center z-10 lg:mt-9 md:mt-7 mt-5">
                 <div className="p-1.5 rounded-full border border-white/30">
-                  <button className="transition-all text-xs sm:text-sm duration-200 uppercase font-medium flex items-center justify-center gap-1.5 h-8 sm:h-10 px-6 sm:px-12 text-black/80 -tracking-[0.015em] relative z-10 overflow-hidden rounded-full border border-white/60 bg-[#d1d1d1] hover:bg-white/80 hover:border-white">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScaaZa82NyGscfI4NdiPmz-3n13It94GIypQHl8jVXHN_pPPA/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-all text-xs sm:text-sm duration-200 uppercase font-medium flex items-center justify-center gap-1.5 h-8 sm:h-10 px-6 sm:px-12 text-black/80 -tracking-[0.015em] relative z-10 overflow-hidden rounded-full border border-white/60 bg-[#d1d1d1] hover:bg-white/80 hover:border-white"
+                  >
                     <span>{t("hero.cta")}</span>
                     <IconArrowRight className="w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

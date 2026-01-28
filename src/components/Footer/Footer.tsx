@@ -11,7 +11,7 @@ type FooterSections = {
     title: string;
     items: FooterLink[];
   };
-  reseller: {
+  tools: {
     title: string;
     items: FooterLink[];
   };
@@ -19,33 +19,6 @@ type FooterSections = {
     title: string;
     items: FooterLink[];
   };
-};
-
-const defaultSections: FooterSections = {
-  links: {
-    title: "Link Cepat",
-    items: [
-      { label: "Tentang Kami", href: "#" },
-      { label: "Produk", href: "#" },
-      { label: "Jadi Reseller", href: "#" },
-      { label: "API", href: "#" },
-    ],
-  },
-  reseller: {
-    title: "Reseller",
-    items: [{ label: "Daftar Reseller", href: "#" }],
-  },
-  socials: {
-    title: "Social Media",
-    items: [
-      { label: "WhatsApp", href: "#", external: true },
-      { label: "Telegram", href: "#", external: true },
-      {
-        label: "support@mabartopup.com",
-        href: "mailto:support@mabartopup.com",
-      },
-    ],
-  },
 };
 
 const Footer = () => {
@@ -55,10 +28,10 @@ const Footer = () => {
     returnObjects: true,
   }) as FooterSections | undefined;
 
-  const sections: FooterSections = {
-    links: translatedSections?.links ?? defaultSections.links,
-    reseller: translatedSections?.reseller ?? defaultSections.reseller,
-    socials: translatedSections?.socials ?? defaultSections.socials,
+  const sections: FooterSections = translatedSections || {
+    links: { title: "", items: [] },
+    tools: { title: "", items: [] },
+    socials: { title: "", items: [] },
   };
 
   const currentYear = new Date().getFullYear();
@@ -66,6 +39,30 @@ const Footer = () => {
     t("footer.copyright", { year: currentYear }) ||
     `© ${currentYear} Teman Mabar. All Rights Reserved.`;
   const brandText = t("footer.brand") || "TEMAN MABAR";
+
+  // Handle smooth scroll to section
+  const handleScrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    // Check if href is a section ID (starts with #)
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const sectionId = href.substring(1);
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const navbarHeight = 57;
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - navbarHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
 
   return (
     <div className="fixed bottom-0 left-0 z-0 px-4 w-full pb-[1em] pt-20 md:pb-[2em] md:pt-40 bg-primary-500 bg-gradient-to-t from-accent-500 via-accent-500/70 to-transparent">
@@ -79,8 +76,9 @@ const Footer = () => {
               {sections.links.items.map((link) => (
                 <li className="py-1.5" key={`links-${link.label}`}>
                   <a
-                    className="transition hover:text-primary-200"
+                    className="transition hover:text-primary-200 cursor-pointer"
                     href={link.href}
+                    onClick={(e) => handleScrollToSection(e, link.href)}
                   >
                     {link.label}
                   </a>
@@ -91,14 +89,15 @@ const Footer = () => {
 
           <div className="flex flex-col gap-6">
             <h3 className="text-xl md:text-3xl font-display tracking-wide text-white">
-              {sections.reseller.title}
+              {sections.tools.title}
             </h3>
             <ul className="-my-2 flex flex-col items-start text-sm text-neutral-300">
-              {sections.reseller.items.map((link) => (
-                <li className="py-1.5" key={`reseller-${link.label}`}>
+              {sections.tools.items.map((link) => (
+                <li className="py-1.5" key={`tools-${link.label}`}>
                   <a
-                    className="transition hover:text-primary-200"
+                    className="transition hover:text-primary-200 cursor-pointer"
                     href={link.href}
+                    onClick={(e) => handleScrollToSection(e, link.href)}
                   >
                     {link.label}
                   </a>
@@ -115,8 +114,9 @@ const Footer = () => {
               {sections.socials.items.map((link) => (
                 <li className="py-1.5" key={`social-${link.label}`}>
                   <a
-                    className="transition hover:text-primary-200"
+                    className="transition hover:text-primary-200 cursor-pointer"
                     href={link.href}
+                    onClick={(e) => handleScrollToSection(e, link.href)}
                     {...(link.external
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}

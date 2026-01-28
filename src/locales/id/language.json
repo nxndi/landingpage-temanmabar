@@ -1,9 +1,10 @@
 {
   "header": {
-    "products": "Produk",
-    "reseller": "Reseller",
+    "services": "Layanan",
+    "calculator": "Kalkulator Keuntungan",
     "about_us": "Tentang Kami",
-    "api": "API",
+    "testimonials": "Testimoni",
+    "faq": "FAQ",
     "contact_us": "Hubungi Kami"
   },
   "hero": {
@@ -228,23 +229,23 @@
       "links": {
         "title": "Link Cepat",
         "items": [
-          { "label": "Tentang Kami", "href": "#" },
-          { "label": "Produk", "href": "#" },
-          { "label": "Jadi Reseller", "href": "#" },
-          { "label": "API", "href": "#" }
+          { "label": "Layanan", "href": "#service-section" },
+          { "label": "Tentang Kami", "href": "#about-section" },
+          { "label": "Testimoni", "href": "#testimonial-section" },
+          { "label": "FAQ", "href": "#faq-section" }
         ]
       },
-      "reseller": {
-        "title": "Reseller",
+      "tools": {
+        "title": "Alat",
         "items": [
-          { "label": "Daftar Reseller", "href": "#" }
+          { "label": "Kalkulator Keuntungan", "href": "#calculator-section" }
         ]
       },
       "socials": {
         "title": "Social Media",
         "items": [
-          { "label": "WhatsApp", "href": "#", "external": true },
-          { "label": "Telegram", "href": "#", "external": true },
+          { "label": "WhatsApp", "href": "https://wa.me/6281116601691", "external": true },
+          { "label": "Telegram", "href": "https://t.me/tmbtopup", "external": true },
           { "label": "support@mabartopup.com", "href": "mailto:support@mabartopup.com" }
         ]
       }

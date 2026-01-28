@@ -1,9 +1,10 @@
 {
   "header": {
-    "products": "Products",
-    "reseller": "Reseller",
+    "services": "Services",
+    "calculator": "Profit Calculator",
     "about_us": "About Us",
-    "api": "API",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
     "contact_us": "Contact Us"
   },
   "hero": {
@@ -228,23 +229,23 @@
       "links": {
         "title": "Quick Links",
         "items": [
-          { "label": "About Us", "href": "#" },
-          { "label": "Products", "href": "#" },
-          { "label": "Become a Reseller", "href": "#" },
-          { "label": "API", "href": "#" }
+          { "label": "Services", "href": "#service-section" },
+          { "label": "About Us", "href": "#about-section" },
+          { "label": "Testimonials", "href": "#testimonial-section" },
+          { "label": "FAQ", "href": "#faq-section" }
         ]
       },
-      "reseller": {
-        "title": "Reseller",
+      "tools": {
+        "title": "Tools",
         "items": [
-          { "label": "Register as Reseller", "href": "#" }
+          { "label": "Profit Calculator", "href": "#calculator-section" }
         ]
       },
       "socials": {
         "title": "Socials",
         "items": [
-          { "label": "WhatsApp", "href": "#", "external": true },
-          { "label": "Telegram", "href": "#", "external": true },
+          { "label": "WhatsApp", "href": "https://wa.me/6281116601691", "external": true },
+          { "label": "Telegram", "href": "https://t.me/tmbtopup", "external": true },
           { "label": "support@mabartopup.com", "href": "mailto:support@mabartopup.com" }
         ]
       }

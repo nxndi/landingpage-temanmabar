@@ -37,7 +37,10 @@ const Testimonial: React.FC = () => {
 
   return (
     <div className="w-full bg-black">
-      <section className="containercustom mx-auto px-4 py-8 md:py-16 xl:py-24 flex flex-col items-center">
+      <section
+        id="testimonial-section"
+        className="containercustom mx-auto px-4 py-8 md:py-16 xl:py-24 flex flex-col items-center"
+      >
         <div className="text-center mb-10 md:mb-16 max-w-sm md:max-w-lg xl:max-w-2xl">
           <h2 className="relative bg-gradient-to-br from-white from-30% via-[#d5d8f6] via-80% to-[#fdf7fe] bg-clip-text text-transparent font-semibold tracking-tighter text-3xl md:text-4xl lg:text-5xl leading-tight">
             {headingPrefix}{" "}

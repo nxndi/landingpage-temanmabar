@@ -80,7 +80,10 @@ const Faq: React.FC = () => {
 
   return (
     <div className="w-full bg-gradient-to-t from-primary-500 via-black/95 to-black">
-      <section className="containercustom mx-auto px-4 py-8 md:py-16 xl:py-24">
+      <section
+        id="faq-section"
+        className="containercustom mx-auto px-4 py-8 md:py-16 xl:py-24"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Section - Title & Subtitle */}
           <div className="text-center md:text-left max-w-sm md:max-w-md mx-auto md:mx-0">

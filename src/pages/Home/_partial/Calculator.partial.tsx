@@ -125,7 +125,10 @@ const Calculator: React.FC = () => {
 
   return (
     <div className="w-full bg-black overflow-hidden">
-      <section className="containercustom mx-auto px-4 py-8 md:py-16 xl:py-24">
+      <section
+        id="calculator-section"
+        className="containercustom mx-auto px-4 py-8 md:py-16 xl:py-24"
+      >
         <div className="text-center mb-10 md:mb-16 max-w-sm md:max-w-lg xl:max-w-2xl mx-auto">
           <h2 className="relative bg-gradient-to-br from-white from-30% via-[#d5d8f6] via-80% to-[#fdf7fe] bg-clip-text text-transparent font-semibold tracking-tighter text-3xl md:text-4xl lg:text-5xl leading-tight">
             {t("calculator.title_prefix") || defaultCalculatorCopy.titlePrefix}{" "}
@@ -339,9 +342,14 @@ const Calculator: React.FC = () => {
                 </div>
 
                 {/* Register Button */}
-                <button className="relative z-10 flex items-center justify-center gap-1.5 rounded-full border-2 border-primary-400 bg-primary-500 p-2 px-6 text-sm text-white hover:bg-primary-600 transition-all">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScaaZa82NyGscfI4NdiPmz-3n13It94GIypQHl8jVXHN_pPPA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative z-10 flex items-center justify-center gap-1.5 rounded-full border-2 border-primary-400 bg-primary-500 p-2 px-6 text-sm text-white hover:bg-primary-600 transition-all"
+                >
                   {t("calculator.button") || defaultCalculatorCopy.button}
-                </button>
+                </a>
               </div>
             </div>
           </div>

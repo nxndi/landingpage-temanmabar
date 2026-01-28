@@ -69,7 +69,10 @@ const About: React.FC = () => {
 
   return (
     <div className="w-full bg-black">
-      <section className="containercustom mx-auto px-4 py-8 md:py-16 xl:py-24">
+      <section
+        id="about-section"
+        className="containercustom mx-auto px-4 py-8 md:py-16 xl:py-24"
+      >
         <div className="text-center mb-10 md:mb-16 max-w-sm md:max-w-lg xl:max-w-2xl mx-auto">
           <h2 className="relative bg-gradient-to-br pb-1.5 from-white from-30% via-[#d5d8f6] via-80% to-[#fdf7fe] bg-clip-text text-transparent font-semibold tracking-tighter text-3xl md:text-4xl lg:text-5xl leading-tight">
             {heading.prefix}

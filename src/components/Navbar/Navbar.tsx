@@ -37,13 +37,50 @@ const Navbar: React.FC = () => {
     flag: lang.icon,
   }));
 
-  // Translated menu items using i18n
+  // Translated menu items using i18n with section IDs
   const menuItems = [
-    { label: t("header.products") || "Produk", href: "#" },
-    { label: t("header.reseller") || "Reseller", href: "#" },
-    { label: t("header.about_us") || "Tentang Kami", href: "#" },
-    { label: t("header.api") || "API", href: "#" },
+    {
+      label: t("header.services") || "Layanan",
+      href: "#service-section",
+      id: "service-section",
+    },
+    {
+      label: t("header.calculator") || "Kalkulator Keuntungan",
+      href: "#calculator-section",
+      id: "calculator-section",
+    },
+    {
+      label: t("header.about_us") || "Tentang Kami",
+      href: "#about-section",
+      id: "about-section",
+    },
+    {
+      label: t("header.faq") || "FAQ",
+      href: "#faq-section",
+      id: "faq-section",
+    },
   ];
+
+  // Handle smooth scroll to section
+  const handleScrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string,
+  ) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 57; // Approximate navbar height in pixels
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+      setIsMenuOpen(false);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -227,7 +264,8 @@ const Navbar: React.FC = () => {
                   <a
                     key={item.label}
                     href={item.href}
-                    className="text-sm font-medium text-white/80 hover:text-white transition-colors"
+                    onClick={(e) => handleScrollToSection(e, item.id)}
+                    className="text-sm font-medium text-white/80 hover:text-white transition-colors cursor-pointer"
                   >
                     {item.label}
                   </a>
@@ -261,7 +299,7 @@ const Navbar: React.FC = () => {
                       -translate-x-1/2
                       rounded-2xl
                       border border-white/10
-                      bg-black/40
+                      bg-white/5
                       backdrop-blur-xl
                       shadow-[0_8px_32px_rgba(0,0,0,0.35)]
                       z-[9999]
@@ -320,12 +358,17 @@ const Navbar: React.FC = () => {
                   document.body,
                 )}
               {/* Contact */}
-              <button className="relative z-10 flex items-center gap-1.5 rounded-full border-2 border-primary-400 bg-primary-500 p-1.5 sm:px-3 sm:py-1.5 text-xs sm:text-sm text-white hover:bg-primary-600 transition-all">
+              <a
+                href="https://wa.me/6281116601691"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative z-10 flex items-center gap-1.5 rounded-full border-2 border-primary-400 bg-primary-500 p-1.5 sm:px-3 sm:py-1.5 text-xs sm:text-sm text-white hover:bg-primary-600 transition-all"
+              >
                 <Icon icon="HeroPhone" className="w-5 h-5" />
                 <span className="hidden sm:inline">
                   {t("header.contact_us") || "Hubungi Kami"}
                 </span>
-              </button>
+              </a>
 
               {/* Mobile Menu Button */}
               <button
@@ -355,7 +398,7 @@ const Navbar: React.FC = () => {
               top-16
               rounded-2xl
               border border-white/10
-              bg-black/40
+              bg-white/5
               backdrop-blur-xl
               shadow-[0_8px_32px_rgba(0,0,0,0.35)]
               z-[9999]
@@ -370,8 +413,8 @@ const Navbar: React.FC = () => {
                     if (el) menuItemsRef.current[index] = el;
                   }}
                   href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+                  onClick={(e) => handleScrollToSection(e, item.id)}
+                  className="flex items-center gap-2 text-white/80 hover:text-white transition-colors cursor-pointer"
                 >
                   <span className="text-white/60 whitespace-nowrap">
                     0{index + 1}

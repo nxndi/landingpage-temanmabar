@@ -73,14 +73,18 @@ const Home: React.FC = () => {
   ];
 
   return (
-    <main className="relative z-10 pb-[530px] sm:pb-[670px]  lg:pb-[500px] xl:pb-[540px] shadow-2xl">
-      <Hero />
-      <FlippingCardScroll title="" subtitle="" cards={cards} />
-      <About />
-      <Service />
-      <Calculator />
-      <Testimonial />
-      <Faq />
+    <main>
+      <div className="relative z-10">
+        <Hero />
+        <FlippingCardScroll title="" subtitle="" cards={cards} />
+        <Service />
+        <Calculator />
+        <About />
+        <Testimonial />
+        <Faq />
+      </div>
+
+      <div className="pointer-events-none h-[530px] sm:h-[670px] lg:h-[500px] xl:h-[540px] w-full"></div>
     </main>
   );
 };
