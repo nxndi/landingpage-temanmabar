@@ -150,12 +150,16 @@ const Calculator: React.FC = () => {
                 {/* Harga Modal Input */}
                 <div className="space-y-2 flex-1 flex flex-col">
                   <div className="flex items-center gap-2">
-                    <label className="text-sm text-neutral-300 font-medium">
+                    <label
+                      htmlFor="modal-price"
+                      className="text-sm text-neutral-300 font-medium"
+                    >
                       {t("calculator.modal_label") ||
                         defaultCalculatorCopy.modalLabel}
                     </label>
                     <button
                       type="button"
+                      aria-label="More information about modal price"
                       onMouseEnter={() => setShowModalTooltip(true)}
                       onMouseLeave={() => setShowModalTooltip(false)}
                       onClick={() => setShowModalTooltip(!showModalTooltip)}
@@ -175,9 +179,11 @@ const Calculator: React.FC = () => {
                       <IconCash className="w-5 h-5 text-neutral-300" />
                     </div>
                     <input
+                      id="modal-price"
                       type="text"
                       value={modalPrice.toLocaleString("id-ID")}
                       readOnly
+                      aria-label="Modal price"
                       className="bg-black/50 border border-gray-700 text-white text-sm rounded-lg block w-full pl-10 p-2.5 focus:ring-primary-400 focus:border-primary-400 cursor-not-allowed opacity-75"
                     />
                   </div>
@@ -185,7 +191,10 @@ const Calculator: React.FC = () => {
 
                 {/* Harga Jual Input */}
                 <div className="space-y-2 flex-1 flex flex-col">
-                  <label className="text-sm text-neutral-300 font-medium">
+                  <label
+                    htmlFor="selling-price"
+                    className="text-sm text-neutral-300 font-medium"
+                  >
                     {t("calculator.selling_label") ||
                       defaultCalculatorCopy.sellingLabel}
                   </label>
@@ -194,6 +203,7 @@ const Calculator: React.FC = () => {
                       <IconCash className="w-5 h-5 text-neutral-300" />
                     </div>
                     <input
+                      id="selling-price"
                       type="text"
                       value={
                         typeof sellingPrice === "number"
@@ -214,6 +224,7 @@ const Calculator: React.FC = () => {
                         t("calculator.selling_placeholder") ||
                         defaultCalculatorCopy.sellingPlaceholder
                       }
+                      aria-label="Selling price"
                       className="bg-black/50 border border-gray-700 text-white text-sm rounded-lg block w-full pl-10 p-2.5 focus:ring-primary-400 focus:border-primary-400"
                     />
                   </div>
@@ -239,7 +250,10 @@ const Calculator: React.FC = () => {
 
                 {/* Jumlah Penjualan Per Hari */}
                 <div className="space-y-2 flex-1 flex flex-col justify-end">
-                  <label className="text-sm text-neutral-300 font-medium">
+                  <label
+                    htmlFor="daily-sales"
+                    className="text-sm text-neutral-300 font-medium"
+                  >
                     {t("calculator.sales_label") ||
                       defaultCalculatorCopy.salesLabel}
                   </label>
@@ -252,11 +266,13 @@ const Calculator: React.FC = () => {
                         ></div>
                       </div>
                       <input
+                        id="daily-sales"
                         type="range"
                         min="1"
                         max="100"
                         value={dailySales}
                         onChange={(e) => setDailySales(Number(e.target.value))}
+                        aria-label="Daily sales"
                         className="appearance-none absolute inset-0 w-full opacity-0 cursor-pointer"
                         style={{ top: "-6px", height: "36px" }}
                       />

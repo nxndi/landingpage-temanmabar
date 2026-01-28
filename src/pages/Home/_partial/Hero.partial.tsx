@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
           />
         </div>
       </div>
-      <div className="containercustom mx-auto px-4 relative z-20 pt-[102px] md:pt-28 lg:pt-44">
+      <div className="containercustom mx-auto px-4 relative z-20 pt-[102px] sm:pt-28 lg:pt-44">
         <div className="flex flex-col gap-16">
           <div className="flex flex-col items-start z-20">
             <div className="max-w-[300px] sm:max-w-xl">

@@ -362,10 +362,10 @@ const Navbar: React.FC = () => {
                 href="https://wa.me/6281116601691"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative z-10 flex items-center gap-1.5 rounded-full border-2 border-primary-400 bg-primary-500 p-1.5 sm:px-3 sm:py-1.5 text-xs sm:text-sm text-white hover:bg-primary-600 transition-all"
+                className="relative z-10 flex items-center gap-1.5 rounded-full border-2 border-primary-400 bg-primary-500 p-1.5 lg:px-3 lg:py-1.5 text-xs lg:text-sm text-white hover:bg-primary-600 transition-all"
               >
                 <Icon icon="HeroPhone" className="w-5 h-5" />
-                <span className="hidden sm:inline">
+                <span className="hidden lg:inline">
                   {t("header.contact_us") || "Hubungi Kami"}
                 </span>
               </a>

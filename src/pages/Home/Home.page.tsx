@@ -84,7 +84,7 @@ const Home: React.FC = () => {
         <Faq />
       </div>
 
-      <div className="pointer-events-none h-[530px] sm:h-[670px] lg:h-[500px] xl:h-[540px] w-full"></div>
+      <div className="pointer-events-none h-[670px] sm:h-[670px] md:h-[780px] lg:h-[630px] xl:h-[655px] 2xl:h-[670px] w-full"></div>
     </main>
   );
 };
