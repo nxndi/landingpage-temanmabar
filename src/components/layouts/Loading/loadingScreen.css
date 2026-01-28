@@ -1,0 +1,93 @@
+/* Container loader */
+.loader-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Loader dasar */
+.loader {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SVG Styling */
+.loader svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.loader svg rect,
+.loader svg polygon,
+.loader svg circle {
+    fill: none;
+    stroke-width: 8px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+/* Animasi Stroke */
+.loader svg polygon {
+    stroke-dasharray: 145 76 145 76;
+    animation: pathTriangle 3s ease-in-out infinite;
+}
+
+.loader svg rect {
+    stroke-dasharray: 192 64 192 64;
+    animation: pathRect 3s ease-in-out infinite;
+}
+
+.loader svg circle {
+    stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle 3s ease-in-out infinite;
+}
+
+/* Animasi Stroke */
+@keyframes pathTriangle {
+    33% {
+        stroke-dashoffset: 74;
+    }
+    66% {
+        stroke-dashoffset: 147;
+    }
+    100% {
+        stroke-dashoffset: 221;
+    }
+}
+
+@keyframes pathRect {
+    25% {
+        stroke-dashoffset: 64;
+    }
+    50% {
+        stroke-dashoffset: 128;
+    }
+    75% {
+        stroke-dashoffset: 192;
+    }
+    100% {
+        stroke-dashoffset: 256;
+    }
+}
+
+@keyframes pathCircle {
+    25% {
+        stroke-dashoffset: 125;
+    }
+    50% {
+        stroke-dashoffset: 175;
+    }
+    75% {
+        stroke-dashoffset: 225;
+    }
+    100% {
+        stroke-dashoffset: 275;
+    }
+}
+

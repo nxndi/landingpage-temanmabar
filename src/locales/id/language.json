@@ -1,0 +1,255 @@
+{
+  "header": {
+    "products": "Produk",
+    "reseller": "Reseller",
+    "about_us": "Tentang Kami",
+    "api": "API",
+    "contact_us": "Hubungi Kami"
+  },
+  "hero": {
+    "title_prefix": "Platform Top Up Game",
+    "title_highlight": "Terpercaya",
+    "subtitle": "Solusi terlengkap untuk kebutuhan top up game dan bisnis reseller Anda. Dapatkan harga terbaik dengan layanan customer service 24/7.",
+    "cta": "Jadi Reseller",
+    "powered_by": "Didukung oleh",
+    "hero_image_alt": "Hero Top Up Game"
+  },
+  "flipping": {
+    "title_prefix": "Solusi",
+    "title_highlight": "Reseller",
+    "title_suffix": "Top Up",
+    "subtitle": "Bangun bisnis top up dengan layanan cepat, stok lengkap, dan harga grosir terpercaya.",
+    "cards": {
+      "card1": {
+        "title": "Produk Resmi",
+        "subtitle": "Kami hanya menjual produk dari distributor resmi.",
+        "badge": "100% Legal",
+        "category": "Keamanan"
+      },
+      "card2": {
+        "title": "Multi Currency",
+        "subtitle": "Mendukung berbagai mata uang termasuk crypto dan USDT dengan SLA ketersediaan stok 99%.",
+        "badge": "IDR & USDT",
+        "category": "Pembayaran"
+      },
+      "card3": {
+        "title": "Layanan API",
+        "subtitle": "API yang cepat dan aman untuk integrasi sistem transaksi.",
+        "badge": "Cepat & Aman",
+        "category": "API"
+      }
+    }
+  },
+  "about": {
+    "title_prefix": "Tentang",
+    "title_highlight": "Kami",
+    "subtitle": "MabarTopup adalah platform top up game dan program reseller terpercaya di Indonesia.",
+    "content_title": "Dipercaya oleh Gamers",
+    "description": "MabarTopup hadir sebagai solusi terpercaya untuk kebutuhan top up game para gamers di Indonesia. Dengan sistem yang cepat, aman, dan harga kompetitif, kami berkomitmen memberikan pengalaman terbaik bagi pelanggan dan reseller kami. Misi kami adalah menjadi platform top up game nomor 1 di Indonesia dengan jaringan reseller terbesar dan terpercaya.",
+    "partner_note": "Fokus tanpa henti, kami terus memberi kepuasan terbaik bagi pengguna dan klien.",
+    "badge_label": "Didukung oleh",
+    "stats": {
+      "transactions": {
+        "value": "100K+",
+        "label": "Transaksi Berhasil"
+      },
+      "resellers": {
+        "value": "1000+",
+        "label": "Reseller Terdaftar"
+      },
+      "uptime": {
+        "value": "99%",
+        "label": "Uptime SLA"
+      },
+      "support": {
+        "value": "24/7",
+        "label": "Customer Support"
+      },
+      "processing": {
+        "value": "<60s",
+        "label": "Proses Transaksi"
+      },
+      "games": {
+        "value": "2000+",
+        "label": "Game Tersedia"
+      }
+    }
+  },
+  "service": {
+    "title_prefix": "Layanan",
+    "title_highlight": "Kami",
+    "subtitle": "Kami menyediakan berbagai layanan terbaik untuk memastikan bisnis top up Anda berjalan lancar.",
+    "cards": {
+      "card1": {
+        "title": "Proses Cepat",
+        "description": "Sistem otomatis untuk proses transaksi super cepat, kurang dari 60 detik dengan notifikasi real-time setelah pembayaran."
+      },
+      "card2": {
+        "title": "Layanan 24/7",
+        "description": "Tim support kami aktif 24 jam setiap hari untuk menjawab pertanyaan, membantu kendala, dan memantau transaksi."
+      },
+      "card3": {
+        "title": "Transaksi Aman",
+        "description": "Sistem pembayaran terenkripsi dengan multi-layer security yang memastikan saldo dan data pelanggan selalu aman."
+      },
+      "card4": {
+        "title": "Harga Kompetitif",
+        "description": "Harga terbaik untuk reseller dengan margin profit menarik serta promo bundling reguler setiap minggu."
+      },
+      "card5": {
+        "title": "Laporan Lengkap",
+        "description": "Dashboard reseller menampilkan laporan penjualan lengkap, tren produk favorit, dan performa tim secara realtime."
+      },
+      "card6": {
+        "title": "Bonus Menarik",
+        "description": "Program bonus, reward musiman, dan misi spesial rutin untuk reseller aktif agar motivasi penjualan tetap tinggi."
+      }
+    }
+  },
+  "calculator": {
+    "title_prefix": "Kalkulator",
+    "title_highlight": "Keuntungan",
+    "subtitle": "Hitung potensi keuntungan Anda sebagai reseller Teman Mabar.",
+    "modal_label": "Harga Modal (Rp)",
+    "modal_tooltip": "Perkiraan harga modal dari produk yang dijual.",
+    "selling_label": "Harga Jual (Rp)",
+    "selling_placeholder": "40.000",
+    "selling_error_low": "Harga jual tidak boleh lebih rendah dari harga modal (Rp {{modal}})",
+    "selling_error_high": "Harga jual maksimal Rp 100.000",
+    "sales_label": "Jumlah Penjualan Per Hari",
+    "monthly_profit_title": "Keuntungan Per Bulan",
+    "based_on": "Berdasarkan {{count}} transaksi per hari",
+    "button": "Daftar Sekarang",
+    "badges": {
+      "badge1": {
+        "title": "Katalog Update Otomatis",
+        "description": "Sinkronisasi stok dan harga langsung dari marketplace."
+      },
+      "badge2": {
+        "title": "Komisi Cair 24 Jam",
+        "description": "Penarikan dana fleksibel tanpa batas minimal."
+      }
+    }
+  },
+  "testimonial": {
+    "title_prefix": "Testimoni",
+    "title_highlight": "Reseller",
+    "subtitle": "Pendapat para reseller terpercaya yang berkembang bersama kami.",
+    "items": [
+      {
+        "quote": "MabarTopup memberikan solusi lengkap untuk bisnis top up game kami. Sistem cepat, stabil, dan harga modal sangat kompetitif.",
+        "name": "Entertopup",
+        "website": "entertopup.com",
+        "rating": 5
+      },
+      {
+        "quote": "Sejak bermitra dengan MabarTopup, pendapatan kami meningkat signifikan. Pelanggan sangat puas dengan proses transaksi yang cepat.",
+        "name": "Entruv",
+        "website": "entruvstore.com",
+        "rating": 5
+      },
+      {
+        "quote": "Dukungan teknis 24/7 sangat membantu bisnis kami. Respon cepat dan selalu siap membantu ketika ada kendala.",
+        "name": "Epun",
+        "website": "epuntopup.com",
+        "rating": 5
+      },
+      {
+        "quote": "Game yang tersedia sangat beragam dan terus bertambah. Pelanggan kami bisa top up berbagai game favorit dalam satu platform.",
+        "name": "Ezpz",
+        "website": "ezpztopup.com",
+        "rating": 5
+      },
+      {
+        "quote": "Harga modal paling kompetitif di pasaran. Margin keuntungan kami jauh lebih besar dibanding platform lain.",
+        "name": "GTID",
+        "website": "gtidtopup.com",
+        "rating": 5
+      },
+      {
+        "quote": "Proses withdraw instan tanpa potongan biaya admin. Sangat membantu arus kas bisnis kami.",
+        "name": "Masdog",
+        "website": "masdoggamingshop.com",
+        "rating": 5
+      },
+      {
+        "quote": "Proses transaksi di platform ini cepat dan stabil, sehingga pelanggan kami bisa top up tanpa kendala.",
+        "name": "Mayrekber",
+        "website": "mayrekberstore.com",
+        "rating": 5
+      },
+      {
+        "quote": "Stok selalu tersedia bahkan di jam ramai. Tidak pernah mengecewakan pelanggan kami.",
+        "name": "PowerTopup",
+        "website": "powertopup.id",
+        "rating": 5
+      },
+      {
+        "quote": "Sejak bermitra dengan MabarTopup, komplain pelanggan berkurang drastis. Transaksi lancar dan tepat waktu.",
+        "name": "Raja Karina",
+        "website": "rajakarina.com",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title_prefix": "Pertanyaan",
+    "title_highlight": "Umum",
+    "subtitle": "Temukan jawaban atas pertanyaan yang sering diajukan tentang layanan reseller kami.",
+    "items": [
+      {
+        "question": "Bagaimana cara bergabung menjadi reseller Teman Mabar?",
+        "answer": "Untuk bergabung sebagai reseller Teman Mabar, Anda cukup mendaftar melalui website resmi kami dengan menekan tombol 'Daftar Reseller'. Lengkapi data yang dibutuhkan, lakukan verifikasi, dan akun Anda akan segera aktif."
+      },
+      {
+        "question": "Apakah perlu modal besar untuk memulai?",
+        "answer": "Tidak perlu modal besar. Reseller Teman Mabar dapat memulai dengan deposit ringan sesuai kebutuhan, sehingga cocok untuk pemula maupun reseller yang sudah berpengalaman."
+      },
+      {
+        "question": "Apakah ada biaya pendaftaran atau biaya bulanan?",
+        "answer": "Tidak ada biaya pendaftaran maupun biaya berlangganan bulanan. Anda hanya perlu melakukan deposit saldo untuk menjalankan transaksi sebagai reseller."
+      },
+      {
+        "question": "Metode pembayaran apa saja yang tersedia?",
+        "answer": "Teman Mabar mendukung berbagai metode pembayaran seperti transfer bank, e-wallet, dan QRIS. Proses pembayaran cepat dan saldo akan langsung masuk setelah transaksi berhasil."
+      },
+      {
+        "question": "Berapa lama proses top up di Teman Mabar?",
+        "answer": "Sebagian besar transaksi top up diproses secara otomatis dan selesai dalam hitungan detik. Jika terjadi kendala tertentu, proses akan segera ditangani oleh sistem atau tim kami."
+      },
+      {
+        "question": "Apakah Teman Mabar menyediakan dukungan untuk reseller?",
+        "answer": "Ya, Teman Mabar menyediakan dukungan reseller melalui WhatsApp, live chat, dan email. Tim support kami siap membantu Anda kapan saja jika mengalami kendala."
+      }
+    ]
+  },
+  "footer": {
+    "sections": {
+      "links": {
+        "title": "Link Cepat",
+        "items": [
+          { "label": "Tentang Kami", "href": "#" },
+          { "label": "Produk", "href": "#" },
+          { "label": "Jadi Reseller", "href": "#" },
+          { "label": "API", "href": "#" }
+        ]
+      },
+      "reseller": {
+        "title": "Reseller",
+        "items": [
+          { "label": "Daftar Reseller", "href": "#" }
+        ]
+      },
+      "socials": {
+        "title": "Social Media",
+        "items": [
+          { "label": "WhatsApp", "href": "#", "external": true },
+          { "label": "Telegram", "href": "#", "external": true },
+          { "label": "support@mabartopup.com", "href": "mailto:support@mabartopup.com" }
+        ]
+      }
+    },
+    "copyright": "© {{year}} Teman Mabar. All Rights Reserved.",
+    "brand": "TEMAN MABAR"
+  }
+}

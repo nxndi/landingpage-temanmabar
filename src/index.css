@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--header-height: 0px;
+		--subheader-height: 0px;
+	}
+
+	/* Hilangkan scrollbar untuk semua browser */
+	.no-scrollbar::-webkit-scrollbar {
+	display: none; /* Chrome, Safari */
+	}
+
+	.no-scrollbar {
+	-ms-overflow-style: none; /* IE dan Edge */
+	scrollbar-width: none; /* Firefox */
+	}
+
+
+	#root {
+		@apply flex grow flex-col;
+	}
+
+	[type='color'],
+	[type='date'],
+	[type='datetime-local'],
+	[type='email'],
+	[type='file'],
+	[type='hidden'],
+	[type='month'],
+	[type='number'],
+	[type='password'],
+	[type='range'],
+	[type='search'],
+	[type='tel'],
+	[type='text'],
+	[type='time'],
+	[type='url'],
+	[type='week'],
+	[multiple],
+	textarea,
+	select {
+		@apply block;
+	}
+
+	[type='color'] {
+		@apply p-0 !important;
+	}
+
+	[type='color']::-webkit-color-swatch {
+		@apply appearance-none rounded border-0 !important;
+	}
+
+	code {
+		@apply break-words font-mono text-pink-500;
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active {
+		@apply bg-clip-text;
+		-webkit-text-fill-color: #0a0a0a; /* Light mode text color */
+	}
+
+	.dark input:-webkit-autofill,
+	.dark input:-webkit-autofill:hover,
+	.dark input:-webkit-autofill:focus,
+	.dark input:-webkit-autofill:active {
+		-webkit-text-fill-color: #ffffff; /* Dark mode text color */
+	}
+}
+
+@layer components {
+	.svg-icon {
+		@apply h-[1em] w-[1em];
+	}
+
+	/* Infinite Moving Cards Animation */
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-250px * 9 - 16px * 8));
+		}
+	}
+
+	.animate-scroll {
+		animation: scroll var(--animation-duration, 40s) linear infinite;
+		animation-direction: var(--animation-direction, forwards);
+	}
+
+	/* Styling untuk FlippingCardScroll */
+	.card-container {
+		perspective: 1000px;
+	}
+
+	.card {
+		transform-style: preserve-3d;
+	}
+
+	.card-front,
+	.card-back {
+		backface-visibility: hidden;
+	}
+
+	.sticky-header h1 {
+		will-change: transform, opacity;
+	}
+
+	@media (max-width: 1023px) {
+		.card-back {
+			transform: none !important;
+		}
+	}
+
+	:root {
+		--color-bg: #0f0f0f;
+		--color-fg: #fff;
+		--color-card-1: #d2b2b2;
+		--color-card-2: #ea2017;
+		--color-card-3: #2f2f2f;
+	}
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-500;
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background-100 dark:bg-background-800;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+:root {
+  --pattern-fg: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --pattern-fg: rgba(255, 255, 255, 0.1);
+}
+
+.invert {
+	mix-blend-mode: difference;
+	color: white;
+}
+
+/* MAX WIDTH SCREENS */
+.containercustom {
+    width: 100%;
+}
+@media (min-width: 320px) {
+    .containercustom {
+        width: 100%;
+    }
+}
+/* @media (min-width: 375px) {
+    .containercustom {
+        width: 100%;
+    }
+} */
+@media (min-width: 640px) {
+    .containercustom {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .containercustom {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .containercustom {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .containercustom {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .containercustom {
+        max-width: 1536px;
+    }
+}

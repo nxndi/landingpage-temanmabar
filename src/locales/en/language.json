@@ -1,0 +1,255 @@
+{
+  "header": {
+    "products": "Products",
+    "reseller": "Reseller",
+    "about_us": "About Us",
+    "api": "API",
+    "contact_us": "Contact Us"
+  },
+  "hero": {
+    "title_prefix": "Game Top Up Platform",
+    "title_highlight": "You Can Trust",
+    "subtitle": "Complete solution for your game top up needs and reseller business. Get the best prices with 24/7 customer service support.",
+    "cta": "Become a Reseller",
+    "powered_by": "Powered by",
+    "hero_image_alt": "Hero Game Topup"
+  },
+  "flipping": {
+    "title_prefix": "Solutions",
+    "title_highlight": "Reseller",
+    "title_suffix": "Top Up",
+    "subtitle": "Build your top up business with fast service, complete stock, and trusted wholesale pricing.",
+    "cards": {
+      "card1": {
+        "title": "Official Products",
+        "subtitle": "We only sell products from official distributors.",
+        "badge": "100% Legal",
+        "category": "Security"
+      },
+      "card2": {
+        "title": "Multi Currency",
+        "subtitle": "Supports multiple currencies including crypto and USDT with 99% stock availability SLA.",
+        "badge": "IDR & USDT",
+        "category": "Payment"
+      },
+      "card3": {
+        "title": "API Service",
+        "subtitle": "Fast and secure API service for transaction system integration.",
+        "badge": "Fast & Secure",
+        "category": "API"
+      }
+    }
+  },
+  "about": {
+    "title_prefix": "About",
+    "title_highlight": "Us",
+    "subtitle": "MabarTopup is a trusted game top up platform and reseller program in Indonesia.",
+    "content_title": "Trusted by Gamers",
+    "description": "MabarTopup is a reliable solution for game top ups across Indonesia. With fast, secure systems and competitive pricing, we are committed to delivering the best experience for customers and resellers. Our mission is to become the number one game top up platform with the largest trusted reseller network.",
+    "partner_note": "With relentless focus, we keep delivering the best satisfaction for our users and clients.",
+    "badge_label": "Powered by",
+    "stats": {
+      "transactions": {
+        "value": "100K+",
+        "label": "Successful Transactions"
+      },
+      "resellers": {
+        "value": "1000+",
+        "label": "Registered Resellers"
+      },
+      "uptime": {
+        "value": "99%",
+        "label": "Uptime SLA"
+      },
+      "support": {
+        "value": "24/7",
+        "label": "Customer Support"
+      },
+      "processing": {
+        "value": "<60s",
+        "label": "Transaction Processing"
+      },
+      "games": {
+        "value": "2000+",
+        "label": "Available Games"
+      }
+    }
+  },
+  "service": {
+    "title_prefix": "Our",
+    "title_highlight": "Services",
+    "subtitle": "We provide the best services to ensure your top up business runs smoothly.",
+    "cards": {
+      "card1": {
+        "title": "Fast Process",
+        "description": "Automated systems for ultra-fast transactions, under 60 seconds with real-time notifications after payment."
+      },
+      "card2": {
+        "title": "24/7 Support",
+        "description": "Our support team is active 24/7 to answer questions, help with issues, and monitor transactions."
+      },
+      "card3": {
+        "title": "Secure Transactions",
+        "description": "Encrypted payment systems with multi-layer security to keep balances and customer data safe."
+      },
+      "card4": {
+        "title": "Competitive Pricing",
+        "description": "Best prices for resellers with attractive margins and regular weekly bundle promos."
+      },
+      "card5": {
+        "title": "Comprehensive Reports",
+        "description": "Reseller dashboards show complete sales reports, favorite product trends, and team performance in realtime."
+      },
+      "card6": {
+        "title": "Exciting Bonuses",
+        "description": "Bonus programs, seasonal rewards, and regular special missions to keep reseller motivation high."
+      }
+    }
+  },
+  "calculator": {
+    "title_prefix": "Profit",
+    "title_highlight": "Calculator",
+    "subtitle": "Calculate your potential profit as a Teman Mabar reseller.",
+    "modal_label": "Capital Cost (Rp)",
+    "modal_tooltip": "Estimated capital cost for the product being sold.",
+    "selling_label": "Selling Price (Rp)",
+    "selling_placeholder": "40,000",
+    "selling_error_low": "Selling price cannot be lower than capital cost (Rp {{modal}})",
+    "selling_error_high": "Maximum selling price is Rp 100,000",
+    "sales_label": "Daily Sales Volume",
+    "monthly_profit_title": "Monthly Profit",
+    "based_on": "Based on {{count}} transactions per day",
+    "button": "Register Now",
+    "badges": {
+      "badge1": {
+        "title": "Auto-updated Catalog",
+        "description": "Stock and price sync directly from marketplace feeds."
+      },
+      "badge2": {
+        "title": "24h Commission Payout",
+        "description": "Flexible withdrawals with no minimum amount."
+      }
+    }
+  },
+  "testimonial": {
+    "title_prefix": "Reseller",
+    "title_highlight": "Stories",
+    "subtitle": "Voices from trusted reseller partners who grow with us.",
+    "items": [
+      {
+        "quote": "MabarTopup delivers a complete solution for our game top up business. The system is fast, stable, and offers very competitive base prices.",
+        "name": "Entertopup",
+        "website": "entertopup.com",
+        "rating": 5
+      },
+      {
+        "quote": "Since partnering with MabarTopup, our revenue has grown significantly. Customers love the speedy transaction process.",
+        "name": "Entruv",
+        "website": "entruvstore.com",
+        "rating": 5
+      },
+      {
+        "quote": "24/7 technical support is incredibly helpful. Quick responses whenever we face issues.",
+        "name": "Epun",
+        "website": "epuntopup.com",
+        "rating": 5
+      },
+      {
+        "quote": "The game catalog is diverse and keeps expanding. Our customers can top up multiple favorites in one place.",
+        "name": "Ezpz",
+        "website": "ezpztopup.com",
+        "rating": 5
+      },
+      {
+        "quote": "Base prices are the most competitive on the market, giving us bigger margins than other platforms.",
+        "name": "GTID",
+        "website": "gtidtopup.com",
+        "rating": 5
+      },
+      {
+        "quote": "Instant withdrawals without admin fees keep our business cashflow healthy.",
+        "name": "Masdog",
+        "website": "masdoggamingshop.com",
+        "rating": 5
+      },
+      {
+        "quote": "Transactions on this platform are fast and stable, so our customers can top up seamlessly.",
+        "name": "Mayrekber",
+        "website": "mayrekberstore.com",
+        "rating": 5
+      },
+      {
+        "quote": "Stock is always available even during peak hours. They never let our customers down.",
+        "name": "PowerTopup",
+        "website": "powertopup.id",
+        "rating": 5
+      },
+      {
+        "quote": "Since partnering with MabarTopup, customer complaints dropped dramatically. Transactions are smooth and on time.",
+        "name": "Raja Karina",
+        "website": "rajakarina.com",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title_prefix": "Common",
+    "title_highlight": "Questions",
+    "subtitle": "Find answers to the most frequent questions about our reseller services.",
+    "items": [
+      {
+        "question": "How do I join as a Teman Mabar reseller?",
+        "answer": "Register on our official website by tapping the 'Join as Reseller' button. Fill in the required data, complete verification, and your account will be activated shortly."
+      },
+      {
+        "question": "Do I need a large capital to start?",
+        "answer": "No big capital needed. You can begin with flexible deposits that fit your needs—perfect for both new and experienced resellers."
+      },
+      {
+        "question": "Are there registration or monthly fees?",
+        "answer": "There are no registration or subscription fees. You only need to top up balance to run reseller transactions."
+      },
+      {
+        "question": "Which payment methods are supported?",
+        "answer": "Teman Mabar supports bank transfers, e-wallets, and QRIS. Payments are fast and balance is added immediately after a successful transaction."
+      },
+      {
+        "question": "How long does a top up take?",
+        "answer": "Most top ups are processed automatically within seconds. If an issue occurs, our system or team will resolve it right away."
+      },
+      {
+        "question": "Is reseller support available?",
+        "answer": "Yes, we provide reseller support via WhatsApp, live chat, and email. Our support team is ready to help anytime you face issues."
+      }
+    ]
+  },
+  "footer": {
+    "sections": {
+      "links": {
+        "title": "Quick Links",
+        "items": [
+          { "label": "About Us", "href": "#" },
+          { "label": "Products", "href": "#" },
+          { "label": "Become a Reseller", "href": "#" },
+          { "label": "API", "href": "#" }
+        ]
+      },
+      "reseller": {
+        "title": "Reseller",
+        "items": [
+          { "label": "Register as Reseller", "href": "#" }
+        ]
+      },
+      "socials": {
+        "title": "Socials",
+        "items": [
+          { "label": "WhatsApp", "href": "#", "external": true },
+          { "label": "Telegram", "href": "#", "external": true },
+          { "label": "support@mabartopup.com", "href": "mailto:support@mabartopup.com" }
+        ]
+      }
+    },
+    "copyright": "© {{year}} Teman Mabar. All Rights Reserved.",
+    "brand": "TEMAN MABAR"
+  }
+}
