@@ -81,7 +81,7 @@ const Footer = () => {
                     href="https://docs.google.com/forms/d/e/1FAIpQLScaaZa82NyGscfI4NdiPmz-3n13It94GIypQHl8jVXHN_pPPA/viewform"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition-all text-xs sm:text-sm duration-200 uppercase font-medium flex items-center justify-center gap-1.5 h-8 sm:h-10 px-6 sm:px-12 text-black/80 -tracking-[0.015em] relative z-10 overflow-hidden rounded-full border border-white/60 bg-[#d1d1d1] hover:bg-white/80 hover:border-white"
+                    className="transition-all text-xs sm:text-sm duration-200 uppercase font-medium flex items-center justify-center gap-1.5 h-8 sm:h-10 px-3 sm:px-6 text-black/80 -tracking-[0.015em] relative z-10 overflow-hidden rounded-full border border-white/60 bg-[#d1d1d1] hover:bg-white/80 hover:border-white"
                   >
                     <span>
                       {t("footer.cta_button") || "Daftar Reseller Sekarang"}
@@ -156,7 +156,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-0 md:gap-4 border-t border-neutral-500 pt-6 text-neutral-300 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-0 md:gap-4 pt-9 text-neutral-300 md:flex-row md:items-end md:justify-between">
           <p className="text-xs hidden md:block mb-3 lg:mb-4 xl:mb-[26px]">
             {copyrightText}
           </p>

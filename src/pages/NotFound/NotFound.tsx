@@ -15,7 +15,7 @@ const NotFound: React.FC = () => {
     <PageWrapper
       title={metaData?.page_title?.replace("{page}", "404")}
       description={metaData?.page_description?.replace("{page}", "404")}
-      className="flex flex-col items-center justify-center bg-secondary-500 min-h-[100dvh] text-center"
+      className="flex flex-col items-center justify-center min-h-[100dvh] text-center"
     >
       <h1 className="text-[128px] lg:text-[256px] leading-[1] text-primary-500 font-bold">
         404

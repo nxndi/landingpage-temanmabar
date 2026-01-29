@@ -405,7 +405,7 @@ const Navbar: React.FC = () => {
             "
             style={{ WebkitBackdropFilter: "blur(18px)" }}
           >
-            <div className="p-2 flex flex-col gap-2 text-lg font-medium">
+            <div className="p-4 flex flex-col gap-2 text-lg font-medium">
               {menuItems.map((item, index) => (
                 <a
                   key={item.label}

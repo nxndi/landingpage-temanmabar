@@ -80,7 +80,7 @@ const FlippingCardScroll: React.FC<FlippingCardScrollProps> = ({ cards }) => {
                   alt={`Card ${card.number}`}
                   width={400}
                   height={500}
-                  fetchPriority={index < 2 ? "high" : "auto"}
+                  {...(index < 2 ? { fetchpriority: "high" } : {})}
                   className="w-full h-full object-contain"
                 />
               </div>

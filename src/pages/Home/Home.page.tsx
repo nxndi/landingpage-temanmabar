@@ -1,12 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Hero from "./_partial/Hero.partial";
-import Story from "./_partial/Story.partial";
 import Service from "./_partial/Service.partial";
 import About from "./_partial/About.partial";
 import Calculator from "./_partial/Calculator.partial";
-import Products from "../../components/Product/Products";
-import Customer from "./_partial/Customer.partial";
 import Faq from "./_partial/Faq.partial";
 import FlippingCardScroll from "../../components/FlippingCardScroll/FlippingCardScroll";
 import Testimonial from "./_partial/Testimonial.partial";
