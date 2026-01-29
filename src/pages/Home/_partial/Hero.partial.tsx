@@ -45,6 +45,13 @@ const Hero: React.FC = () => {
     }
   }, []);
 
+  // Preload the background image for better performance
+  useEffect(() => {
+    const img = new Image();
+    img.src = Background;
+    img.fetchPriority = "high";
+  }, []);
+
   return (
     <section
       className="relative w-full bg-cover bg-center overflow-hidden flex flex-col"
@@ -113,6 +120,8 @@ const Hero: React.FC = () => {
                 <img
                   src={HeroImage}
                   alt={t("hero.hero_image_alt")}
+                  width={600}
+                  height={450}
                   className="w-full h-auto block rounded-[10px]"
                 />
                 {/* Overlay with gradient */}
@@ -125,6 +134,8 @@ const Hero: React.FC = () => {
                     <img
                       src={EnterkompurerLogo}
                       alt="Enterkomputer Logo"
+                      width={120}
+                      height={24}
                       className="h-4 sm:h-6 w-auto object-contain"
                     />
                   </div>

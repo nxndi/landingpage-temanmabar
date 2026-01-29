@@ -112,9 +112,9 @@ const FlippingCardScroll: React.FC<FlippingCardScrollProps> = ({ cards }) => {
                     </div>
                   )}
                   <div className="space-y-2">
-                    <h4 className="text-2xl lg:text-base xl:text-xl font-semibold leading-tight tracking-tight text-white">
+                    <h1 className="text-2xl lg:text-base xl:text-xl font-semibold leading-tight tracking-tight text-white">
                       {card.backTitle}
-                    </h4>
+                    </h1>
                     <p className="text-sm lg:text-[10px] xl:text-sm leading-relaxed text-white/80 max-w-[220px]">
                       {card.backSubtitle}
                     </p>
