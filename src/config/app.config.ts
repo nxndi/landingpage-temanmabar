@@ -25,8 +25,8 @@ type TAppConfigs = {
 };
 
 const appConfig: TAppConfigs = {
-  projectTitle: "Kedai Kopi Kulo",
-  projectName: "Kedai Kopi Kulo",
+  projectTitle: "Teman Mabar",
+  projectName: "Teman Mabar",
   language: "en",
   region: "id",
   theme: DARK_MODE.DARK,

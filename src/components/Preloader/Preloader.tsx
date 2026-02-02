@@ -85,7 +85,7 @@ const Preloader: React.FC = () => {
         >
           <img
             src={Logo}
-            alt="Kedai Kopi Kulo"
+            alt="Teman Mabar"
             className="h-16 md:h-28 w-full object-contain"
           />
         </motion.div>
