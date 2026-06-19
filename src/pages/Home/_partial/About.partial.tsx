@@ -73,31 +73,31 @@ const About: React.FC = () => {
         id="about-section"
         className="containercustom mx-auto px-4 py-8 md:py-16 xl:py-24"
       >
-        <div className="text-center mb-10 md:mb-16 max-w-sm md:max-w-lg xl:max-w-2xl mx-auto">
+        <div className="text-center mb-12 md:mb-20 max-w-sm md:max-w-lg xl:max-w-2xl mx-auto">
           <h2 className="relative bg-gradient-to-br pb-1.5 from-white from-30% via-[#d5d8f6] via-80% to-[#fdf7fe] bg-clip-text text-transparent font-semibold tracking-tighter text-3xl md:text-4xl lg:text-5xl leading-tight">
             {heading.prefix}
             <span className="font-display px-1 italic font-bold text-4xl lg:text-5xl bg-gradient-to-r from-primary-500 via-primary-200 to-primary-500 bg-clip-text text-transparent">
               {heading.highlight}
             </span>
           </h2>
-          <p className="text-[#e9e9e9] leading-tight tracking-tight text-[15px] mt-1.5">
+          <p className="text-[#e9e9e9] leading-snug tracking-tight text-[15px] mt-3 md:mt-4">
             {heading.subtitle}
           </p>
         </div>
 
-        <div className="lg:grid grid-cols-10 gap-8 items-start lg:items-stretch">
-          <div className="lg:col-span-6 flex flex-col gap-8 h-full">
+        <div className="lg:grid grid-cols-10 gap-10 xl:gap-14 items-start lg:items-stretch">
+          <div className="lg:col-span-6 flex flex-col gap-10 h-full">
             <div>
-              <h3 className="text-xl md:text-3xl font-bold text-white mb-2 lg:mb-4">
+              <h3 className="text-xl md:text-3xl font-bold text-white mb-3 lg:mb-5">
                 {aboutContent.title}
               </h3>
-              <p className="text-neutral-300 leading-relaxed text-sm md:text-base">
+              <p className="text-neutral-300 leading-relaxed text-sm md:text-[15px] md:leading-[1.75]">
                 {aboutContent.description}
               </p>
             </div>
 
             {/* Partner Section - Responsive */}
-            <div className="flex flex-col lg:flex-row gap-4 lg:gap-2 items-start lg:items-center w-full overflow-hidden">
+            <div className="flex flex-col lg:flex-row gap-5 lg:gap-4 items-start lg:items-center w-full overflow-hidden">
               {/* Partner Note */}
               <div className="border-l-2 border-primary-500 pl-2 w-full lg:flex-[0_0_32%] lg:max-w-[220px] lg:min-w-[140px]">
                 <p className="text-white/70 text-[10px] font-medium">
@@ -122,13 +122,16 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-4 grid grid-cols-2 justify-center mt-8 lg:mt-0 items-center text-center gap-3 h-full">
+          <div className="lg:col-span-4 grid grid-cols-2 justify-center mt-10 lg:mt-0 items-center text-center gap-x-4 gap-y-6 md:gap-x-6 md:gap-y-8 h-full">
             {statsData.map(({ value, label }) => (
-              <div key={label} className="justify-center items-center">
+              <div
+                key={label}
+                className="justify-center items-center flex flex-col gap-1"
+              >
                 <p className="text-primary-200 text-2xl md:text-3xl font-bold">
                   {value}
                 </p>
-                <p className="text-neutral-400 text-[10px] md:text-sm leading-tight">
+                <p className="text-neutral-400 text-[11px] md:text-sm leading-snug tracking-wide">
                   {label}
                 </p>
               </div>

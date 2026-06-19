@@ -71,7 +71,7 @@ const Home: React.FC = () => {
 
   return (
     <main>
-      <div className="relative z-10">
+      <div className="relative z-10 space-y-[20dvh] bg-black">
         <Hero />
         <FlippingCardScroll title="" subtitle="" cards={cards} />
         <Service />
