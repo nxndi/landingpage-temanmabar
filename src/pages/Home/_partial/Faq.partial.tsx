@@ -89,7 +89,7 @@ const Faq: React.FC = () => {
           <div className="text-center md:text-left max-w-sm md:max-w-md mx-auto md:mx-0">
             <h2 className="relative bg-gradient-to-br from-white from-30% via-[#d5d8f6] via-80% to-[#fdf7fe] bg-clip-text text-transparent font-semibold tracking-tighter text-3xl md:text-4xl lg:text-5xl leading-tight">
               {headingPrefix}{" "}
-              <span className="font-display px-1 italic font-bold text-4xl lg:text-5xl bg-gradient-to-r from-primary-500 via-primary-200 to-primary-500 bg-clip-text text-transparent">
+              <span className="font-display pr-2.5 italic font-bold text-4xl lg:text-5xl bg-gradient-to-r from-primary-500 via-primary-200 to-primary-500 bg-clip-text text-transparent">
                 {headingHighlight}
               </span>
             </h2>

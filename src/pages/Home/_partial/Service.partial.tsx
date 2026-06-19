@@ -14,8 +14,8 @@ interface GridItemProps {
 
 const GridItem = ({ area, icon, title, description }: GridItemProps) => {
   return (
-    <li className={`min-h-[13rem] list-none ${area}`}>
-      <div className="relative h-full bg-primary-900/50 rounded-2xl border border-gray-800 p-2 md:rounded-3xl md:p-3">
+    <li className={`min-h-[10rem] list-none ${area}`}>
+      <div className="relative h-full bg-primary-900/50 rounded-2xl border border-gray-800 p-1.5 md:rounded-2xl md:p-2">
         <GlowingEffect
           borderWidth={3}
           spread={40}
@@ -25,16 +25,16 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
           inactiveZone={0.01}
           color={appConfig.primaryColor}
         />
-        <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-2 shadow-[0px_0px_27px_0px_#2D2D2D]">
-          <div className="relative flex flex-1 flex-col justify-between gap-3">
-            <div className="w-fit rounded-xl border border-primary-500/40 p-2 bg-gradient-to-br from-primary-500/15 to-primary-500/5 backdrop-blur-md shadow-lg shadow-primary-500/10 transition-all duration-300 group-hover:border-primary-500/60 group-hover:from-primary-500/25 group-hover:shadow-primary-500/20">
-              <Icon icon={icon} className="w-8 h-8 text-primary-200" />
+        <div className="border-0.75 relative flex h-full flex-col justify-between gap-4 overflow-hidden rounded-xl p-1.5 shadow-[0px_0px_27px_0px_#2D2D2D]">
+          <div className="relative flex flex-1 flex-col justify-between gap-2">
+            <div className="w-fit rounded-lg border border-primary-500/40 p-1.5 bg-gradient-to-br from-primary-500/15 to-primary-500/5 backdrop-blur-md shadow-lg shadow-primary-500/10 transition-all duration-300 group-hover:border-primary-500/60 group-hover:from-primary-500/25 group-hover:shadow-primary-500/20">
+              <Icon icon={icon} className="w-6 h-6 text-primary-200" />
             </div>
-            <div className="space-y-1">
-              <h3 className="-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance md:text-xl text-white">
+            <div className="space-y-0.5">
+              <h3 className="-tracking-4 pt-0.5 font-sans text-base/[1.25rem] font-semibold text-balance md:text-lg text-white">
                 {title}
               </h3>
-              <h2 className="font-sans text-sm/[1.125rem] md:text-sm text-neutral-400 [&_b]:md:font-semibold [&_strong]:md:font-semibold">
+              <h2 className="font-sans text-xs/[1.1rem] md:text-xs text-neutral-400 [&_b]:md:font-semibold [&_strong]:md:font-semibold">
                 {description}
               </h2>
             </div>
@@ -118,7 +118,7 @@ const Service: React.FC = () => {
           </p>
         </div>
 
-        <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+        <ul className="grid grid-cols-2 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
           {services.map((service) => (
             <GridItem key={service.title} {...service} />
           ))}

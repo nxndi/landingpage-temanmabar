@@ -113,12 +113,6 @@
 		will-change: transform, opacity;
 	}
 
-	@media (max-width: 1023px) {
-		.card-back {
-			transform: none !important;
-		}
-	}
-
 	:root {
 		--color-bg: #0f0f0f;
 		--color-fg: #fff;
